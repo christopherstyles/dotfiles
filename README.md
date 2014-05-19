@@ -1,7 +1,9 @@
+Many thanks to [thoughtbot](https://github.com/thoughtbot/dotfiles) and [Paul Irish](https://github.com/paulirish/dotfiles), whose dotfiles were shamelessly borrowed from to create my own.
+
 Install
 -------
 
-Clone onto your laptop:
+Clone the repo:
 
     git clone git://github.com/christopherstyles/dotfiles.git
 
