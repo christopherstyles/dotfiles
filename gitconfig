@@ -1,0 +1,37 @@
+[color]
+  diff = auto
+  status = auto
+  branch = auto
+  interactive = auto
+	ui = true
+[alias]
+  st = status
+  ci = commit
+  co = checkout
+  b  = branch
+  p  = pull
+  pp = !"git pull && git push"
+  unstage = reset HEAD # http://yanpritzker.com/git-book/#Two+useful+aliases:+unstage+and+uncommit
+  uncommit = reset --soft HEAD^
+  logg = !git log --oneline --decorate
+  ignore = !git update-index --assume-unchanged # http://gitready.com/intermediate/2009/02/18/temporarily-ignoring-files.html
+  unignore = !git update-index --no-assume-unchanged
+  ignored = !git ls-files -v | grep ^[a-z]
+[merge]
+	tool = opendiff
+	summary = true
+[credential]
+	helper = osxkeychain
+[core]
+	quotepath = false
+	editor = subl -w
+	excludesfile = ~/.gitignore
+  autocrlf = input
+[push]
+	default = tracking
+[include]
+  path = .gitconfig.local
+[commit]
+  template = ~/.gitmessage
+[fetch]
+  prune = true
