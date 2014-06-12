@@ -34,6 +34,12 @@ map <Leader>a :call RunAllSpecs()<CR>
 set splitbelow
 set splitright
 
+" Quicker window movement
+nnoremap <C-j> <C-w>j
+nnoremap <C-k> <C-w>k
+nnoremap <C-h> <C-w>h
+nnoremap <C-l> <C-w>l
+
 " let g:rspec_command = 'call Send_to_Tmux("rspec {spec}\n")'
 
 " let g:solarized_termcolors=256
