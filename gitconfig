@@ -17,6 +17,7 @@
   ignore = !git update-index --assume-unchanged # http://gitready.com/intermediate/2009/02/18/temporarily-ignoring-files.html
   unignore = !git update-index --no-assume-unchanged
   ignored = !git ls-files -v | grep ^[a-z]
+  graphlog = !git log --all --graph --pretty=format:'%Cred%h%Creset -%C(auto)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
 [merge]
 	tool = opendiff
 	summary = true
