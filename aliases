@@ -42,7 +42,7 @@ alias c='pygmentize -O style=monokai -f console256 -g'
 
 # Git aliases
 alias gcma='git commit -am'
-alias gst='git status'
+alias gst='git status -sb'
 alias gcm='git commit -m'
 alias gb='git branch'
 alias gp='git pull'
