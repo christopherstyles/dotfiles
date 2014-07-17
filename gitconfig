@@ -3,7 +3,7 @@
   status = auto
   branch = auto
   interactive = auto
-	ui = true
+  ui = true
 [alias]
   st = status -sb
   ci = commit
@@ -19,20 +19,25 @@
   ignored = !git ls-files -v | grep ^[a-z]
   graphlog = !git log --all --graph --pretty=format:'%Cred%h%Creset -%C(auto)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
 [merge]
-	tool = opendiff
-	summary = true
+  tool = opendiff
+  summary = true
 [credential]
-	helper = osxkeychain
+  helper = osxkeychain
 [core]
-	quotepath = false
-	editor = subl -w
-	excludesfile = ~/.gitignore
+  quotepath = false
+  editor = subl -w
+  excludesfile = ~/.gitignore
   autocrlf = input
 [push]
-	default = tracking
+  default = upstream
 [include]
   path = .gitconfig.local
 [commit]
   template = ~/.gitmessage
 [fetch]
   prune = true
+[mergetool]
+  keepBackup = false
+[filter "media"]
+	clean = git-media-clean %f
+	smudge = git-media-smudge %f
