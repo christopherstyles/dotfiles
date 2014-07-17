@@ -1,0 +1,116 @@
+if &compatible
+  set nocompatible
+end
+
+filetype off
+
+" set the runtime path to include Vundle and initialize
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#rc()
+
+" Let Vundle manage Vundle
+Plugin 'gmarik/Vundle.vim'
+
+" Define bundles via Github repos
+" Plugin 'christoomey/vim-run-interactive'
+" Plugin 'croaky/vim-colors-github'
+" Plugin 'danro/rename.vim'
+Plugin 'kchmck/vim-coffee-script'
+" Plugin 'pbrisbin/vim-mkdir'
+Plugin 'slim-template/vim-slim'
+Plugin 'thoughtbot/vim-rspec'
+Plugin 'tpope/vim-rails'
+" Plugin 'tpope/vim-surround'
+Plugin 'vim-ruby/vim-ruby'
+" Plugin 'vim-scripts/ctags.vim'
+" Plugin 'vim-scripts/matchit.zip'
+" Plugin 'vim-scripts/tComment'
+Plugin 'sickill/vim-sunburst'
+" Plugin 'rstacruz/sparkup' " Emmett-like html expansion
+Plugin 'ngmy/vim-rubocop'
+
+" rstacruz/sparkup
+" https://github.com/rstacruz/sparkup
+" A parser for a condensed HTML format
+Plugin 'rstacruz/sparkup'
+
+" mattn/emmet-vim
+" http://github.com/mattn/emmet-vim
+" emmet-vim is a vim plug-in which provides support for expanding abbreviations
+" similar to emmett.
+" Plugin 'mattn/emmet-vim'
+
+" junegunn/goyo.vim
+" https://github.com/junegunn/goyo.vim
+" Distraction-free writing in Vim.
+Plugin 'junegunn/goyo.vim'
+
+" junegunn/limelight.vim
+" https://github.com/junegunn/limelight.vim
+" All the world's indeed a stage and we are merely player
+" Hyperfocus-writing in Vim
+Plugin 'junegunn/limelight.vim'
+
+" airblade/vim-gitgutter
+" https://github.com/airblade/vim-gitgutter
+" A Vim plugin which shows a git diff in the 'gutter' (sign column). It shows
+" whether each line has been added, modified, and where lines have been removed.
+" You can also stage and revert individual hunks.
+Plugin 'airblade/vim-gitgutter' " shows a git diff in the 'gutter' (sign column)
+
+" kshenoy/vim-signature
+" https://github.com/kshenoy/vim-signature
+" Plugin to toggle, display and navigate marks
+Plugin 'kshenoy/vim-signature'
+
+" kien/ctrlp.vim
+" https://github.com/kien/ctrlp.vim
+" Fuzzy file, buffer, mru, tag, etc finder.
+Plugin 'kien/ctrlp.vim'
+
+" tpope/vim-surround
+" https://github.com/tpope/vim-surround
+" surround.vim: quoting/parenthesizing made simple
+" Plugin 'tpope/vim-surround'
+
+" valloric/MatchTagAlways
+" https://github.com/valloric/MatchTagAlways
+" A Vim plugin that always highlights the enclosing html/xml tags
+" Plugin 'valloric/MatchTagAlways'
+
+" cakebaker/scss-syntax.vim
+" https://github.com/cakebaker/scss-syntax.vim
+" Vim syntax file for scss (Sassy CSS)
+Plugin 'JulesWang/css.vim' " necessary for Vim version < 7.4
+Plugin 'cakebaker/scss-syntax.vim'
+
+" bling/vim-airline
+" https://github.com/bling/vim-airline
+" lean & mean status/tabline for vim that's light as air
+Plugin 'bling/vim-airline'
+
+" tpope/vim-fugitive
+" https://github.com/tpope/vim-fugitive
+" fugitive.vim: a Git wrapper so awesome, it should be illegal
+Plugin 'tpope/vim-fugitive'
+
+" scrooloose/nerdtree
+" https://github.com/scrooloose/nerdtree
+" A tree explorer plugin for vim.
+Plugin 'scrooloose/nerdtree'
+
+" scrooloose/syntastic
+" https://github.com/scrooloose/syntastic
+" Syntax checking hacks for vim
+Plugin 'scrooloose/syntastic'
+
+" tpope/vim-bundler
+" https://github.com/tpope/vim-bundler
+" bundler.vim: Lightweight support for Ruby's Bundler
+Plugin 'tpope/vim-bundler'
+
+if filereadable(expand("~/.vimrc.bundles.local"))
+  source ~/.vimrc.bundles.local
+endif
+
+filetype on
