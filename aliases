@@ -119,7 +119,10 @@ total_lines_of_code() {
   #   # Find the total sum of lines in the stylesheets directory, for sass files
   #   $> total_lines_of_code app/assets/stylesheets/ "*.scss"
   #
-  find $1 -name $2 -print | xargs wc -l
+  local path=$1
+  local pattern=$2
+
+  find $path -name $pattern -print | xargs wc -l
 }
 alias loc=total_lines_of_code
 
