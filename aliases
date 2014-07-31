@@ -109,5 +109,19 @@ repeat() {
     done
 }
 
+# Lines of code
+total_lines_of_code() {
+  # $1 - the directory to search within
+  # $2 - the file pattern to match
+  #
+  # Example:
+  #
+  #   # Find the total sum of lines in the stylesheets directory, for sass files
+  #   $> total_lines_of_code app/assets/stylesheets/ "*.scss"
+  #
+  find $1 -name $2 -print | xargs wc -l
+}
+alias loc=total_lines_of_code
+
 # Include custom aliases
 [[ -f ~/.aliases.local ]] && source ~/.aliases.local
