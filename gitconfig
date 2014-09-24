@@ -43,3 +43,5 @@
 	smudge = git-media-smudge %f
 [github]
 	user = christopherstyles
+[rerere]
+  enabled = 1
