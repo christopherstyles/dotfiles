@@ -13,11 +13,11 @@
   pp = !"git pull && git push"
   unstage = reset HEAD # http://yanpritzker.com/git-book/#Two+useful+aliases:+unstage+and+uncommit
   uncommit = reset --soft HEAD^
-  logg = !git log --oneline --decorate
   ignore = !git update-index --assume-unchanged # http://gitready.com/intermediate/2009/02/18/temporarily-ignoring-files.html
   unignore = !git update-index --no-assume-unchanged
   ignored = !git ls-files -v | grep ^[a-z]
-  graphlog = !git log --all --graph --pretty=format:'%Cred%h%Creset -%C(auto)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+  simplelog = !git log --oneline --decorate
+  lg = !git log --all --graph --pretty=format:'%Cred%h%Creset -%C(auto)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
 [merge]
   tool = opendiff
   summary = true
