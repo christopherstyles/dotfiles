@@ -35,3 +35,6 @@ export PATH=~/bin:$PATH
 
 # load dotfiles scripts
 export PATH="$HOME/.bin:$PATH"
+
+# Include custom exports
+[[ -f ~/.exports.local ]] && source ~/.exports.local
