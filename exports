@@ -31,6 +31,9 @@ export PATH="/usr/local/sbin:/usr/local/bin:./bin:$PATH"
 # Node
 export PATH="/usr/local/share/npm/bin:$PATH"
 
+# RVM
+export PATH="$PATH:$HOME/.rvm/bin"
+
 export PATH=~/bin:$PATH
 
 # load dotfiles scripts
