@@ -9,7 +9,8 @@ Clone the repo:
 
 Install [rcm](https://github.com/thoughtbot/rcm):
 
-    brew bundle dotfiles/Brewfile
+    brew tap thoughtbot/formulae
+    brew install rcm
 
 Install:
 
