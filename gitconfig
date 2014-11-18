@@ -38,11 +38,10 @@
   prune = true
 [mergetool]
   keepBackup = false
-[filter "media"]
-	required = true
-	clean = git media clean %f
-	smudge = git media smudge %f
 [github]
-	user = christopherstyles
+  user = christopherstyles
 [rerere]
   enabled = 0
+[user]
+  name = Christopher Styles
+  email = christopherstyles@gmail.com
