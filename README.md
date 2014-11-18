@@ -37,3 +37,11 @@ Put your customizations in dotfiles appended with `.local`:
 * `~/.vimrc.local`
 * `~/.vimrc.bundles.local`
 * `~/.bashrc.local`
+
+Install Vundle (the vim plugin manager) with the following:
+
+    git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+
+Install the vim plugins with:
+
+    Launch `vim` and run `:PluginInstall`
