@@ -182,3 +182,6 @@ map <C-n> :NERDTreeToggle<CR>
 " https://github.com/thoughtbot/vim-rspec#iterm-instead-of-terminal
 let g:rspec_runner = "os_x_iterm"
 
+" let g:rspec_command = 'call Send_to_Tmux("rspec {spec}\n")'
+let g:rspec_command = "Dispatch rspec {spec}"
+
