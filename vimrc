@@ -28,6 +28,19 @@ if filereadable(expand("~/.vimrc.bundles"))
   source ~/.vimrc.bundles
 endif
 
+let g:solarized_termcolors=256
+syntax enable
+set background=dark
+colorscheme sunburst
+" colorscheme solarized
+" colorscheme monokai
+
+if has('gui_running')
+  set guifont=Monaco:h12
+  set guioptions-=r
+  set guioptions-=l
+end
+
 filetype plugin indent on
 
 augroup vimrcEx
@@ -78,8 +91,14 @@ if executable('ag')
 endif
 
 " Make it obvious where 80 characters is
-set textwidth=80
-set colorcolumn=+1
+" set textwidth=80
+" set colorcolumn=+1
+
+" let &colorcolumn="80,"
+set colorcolumn=80
+" let &colorcolumn="80,".join(range(120,999),",")
+
+highlight ColorColumn ctermbg=235 guibg=#2c2d27
 
 " Numbers
 set number
