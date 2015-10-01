@@ -109,6 +109,11 @@ Plugin 'scrooloose/syntastic'
 " bundler.vim: Lightweight support for Ruby's Bundler
 Plugin 'tpope/vim-bundler'
 
+" nyancat.vim - nyancat on vim
+" https://github.com/koron/nyancat-vim
+" nyancat-vim: nyancat.vim - nyancat on vim
+Plugin 'koron/nyancat-vim'
+
 if filereadable(expand("~/.vimrc.bundles.local"))
   source ~/.vimrc.bundles.local
 endif
