@@ -41,3 +41,14 @@ export PATH="$HOME/.bin:$PATH"
 
 # Include custom exports
 [[ -f ~/.exports.local ]] && source ~/.exports.local
+
+# RVM
+export PATH="$PATH:$HOME/.rvm/bin"
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"
+
+# GO
+export PATH=$PATH:/usr/local/opt/go/libexec/bin
+
+export GOPATH=~/gocode
+
+export PATH=$PATH:$GOPATH/bin
