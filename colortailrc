@@ -1,0 +1,10 @@
+Groupings = {
+  'papertrail' => [
+    { :match => /production.log/, :color => :magenta },
+    { :match => /mysqld/,         :color => :red },
+    { :match => /www/,            :color => :cyan },
+    { :match => /sshd/,           :color => :black, :attributes => :bright },
+    { :match => /heroku\/router/, :color => :yellow },
+    { :match => /app\/heroku-postgres/, :color => :cyan }
+  ]
+}
