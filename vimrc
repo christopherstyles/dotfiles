@@ -185,6 +185,8 @@ let g:rspec_runner = "os_x_iterm"
 " let g:rspec_command = 'call Send_to_Tmux("rspec {spec}\n")'
 let g:rspec_command = "Dispatch rspec {spec}"
 
+set mouse=a
+
 " Airline config
 let g:airline#extensions#tabline#enabled = 1
 let g:airline_powerline_fonts=0
