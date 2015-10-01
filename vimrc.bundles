@@ -8,7 +8,7 @@ filetype off
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#rc()
 
-" Let Vundle manage Vundle
+
 Plugin 'gmarik/Vundle.vim'
 
 " Define bundles via Github repos
@@ -32,6 +32,7 @@ Plugin 'sickill/vim-monokai'
 " Plugin 'rstacruz/sparkup' " Emmett-like html expansion
 " Plugin 'jgdavey/tslime.vim'
 Plugin 'ngmy/vim-rubocop'
+Plugin 'elzr/vim-json'
 
 " rstacruz/sparkup
 " https://github.com/rstacruz/sparkup
