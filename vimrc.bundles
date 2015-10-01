@@ -30,6 +30,7 @@ Plugin 'vim-ruby/vim-ruby'
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'sickill/vim-monokai'
 " Plugin 'rstacruz/sparkup' " Emmett-like html expansion
+" Plugin 'jgdavey/tslime.vim'
 Plugin 'ngmy/vim-rubocop'
 
 " rstacruz/sparkup
