@@ -32,7 +32,7 @@
 [push]
   default = upstream
 [include]
-  path = .gitconfig.local
+  path = ~/.gitconfig.local
 [commit]
   template = ~/.gitmessage
 [fetch]
