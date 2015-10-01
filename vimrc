@@ -175,3 +175,7 @@ set autoread
 
 " Highlight searches
 " set hlsearch
+
+" Open NERDTree with Ctrl+n
+map <C-n> :NERDTreeToggle<CR>
+
