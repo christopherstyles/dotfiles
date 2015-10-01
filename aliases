@@ -127,5 +127,8 @@ total_lines_of_code() {
 }
 alias loc=total_lines_of_code
 
+# The largest 20 gems
+alias gemsize='bundle show --paths | xargs -L 1 du -s | sort -n -r | head -n 20'
+
 # Include custom aliases
 [[ -f ~/.aliases.local ]] && source ~/.aliases.local
