@@ -25,7 +25,9 @@ Plugin 'vim-ruby/vim-ruby'
 " Plugin 'vim-scripts/ctags.vim'
 " Plugin 'vim-scripts/matchit.zip'
 " Plugin 'vim-scripts/tComment'
-Plugin 'sickill/vim-sunburst'
+" Plugin 'sickill/vim-sunburst'
+Plugin 'altercation/vim-colors-solarized'
+Plugin 'sickill/vim-monokai'
 " Plugin 'rstacruz/sparkup' " Emmett-like html expansion
 Plugin 'ngmy/vim-rubocop'
 
