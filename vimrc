@@ -179,3 +179,6 @@ set autoread
 " Open NERDTree with Ctrl+n
 map <C-n> :NERDTreeToggle<CR>
 
+" https://github.com/thoughtbot/vim-rspec#iterm-instead-of-terminal
+let g:rspec_runner = "os_x_iterm"
+
