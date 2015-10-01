@@ -185,3 +185,14 @@ let g:rspec_runner = "os_x_iterm"
 " let g:rspec_command = 'call Send_to_Tmux("rspec {spec}\n")'
 let g:rspec_command = "Dispatch rspec {spec}"
 
+" Airline config
+let g:airline#extensions#tabline#enabled = 1
+let g:airline_powerline_fonts=0
+
+" GitGutter colors
+highlight SignColumn ctermbg=235 ctermfg=235
+
+" This allows buffers to be hidden if you've modified a buffer.
+" This is almost a must if you wish to use buffers in this way.
+set hidden
+
