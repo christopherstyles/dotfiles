@@ -119,6 +119,10 @@ Plugin 'tpope/vim-bundler'
 " nyancat-vim: nyancat.vim - nyancat on vim
 Plugin 'koron/nyancat-vim'
 
+" vim-cjsx
+" https://github.com/mtscout6/vim-cjsx
+Plugin 'mtscout6/vim-cjsx'
+
 if filereadable(expand("~/.vimrc.bundles.local"))
   source ~/.vimrc.bundles.local
 endif
