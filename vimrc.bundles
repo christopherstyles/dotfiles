@@ -123,6 +123,11 @@ Plugin 'koron/nyancat-vim'
 " https://github.com/mtscout6/vim-cjsx
 Plugin 'mtscout6/vim-cjsx'
 
+" vim-multiple-cursors
+" https://github.com/terryma/vim-multiple-cursors
+" vim-multiple-cursors: True Sublime Text style multiple selections for Vim
+" Plugin 'terryma/vim-multiple-cursors'
+
 " indentLine
 " https://github.com/Yggdroot/indentLine
 " indentLine: A vim plugin to display the indention levels with thin vertical
