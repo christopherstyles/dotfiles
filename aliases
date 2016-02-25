@@ -93,7 +93,7 @@ alias showdesktop="defaults write com.apple.finder CreateDesktop -bool true && k
 alias map="xargs -n1"
 
 # Rails aliases
-alias migrate='rake db:migrate db:rollback && rake db:migrate db:test:clone'
+alias migrate='rake db:migrate db:rollback && rake db:migrate'
 
 # Lines of code
 total_lines_of_code() {
