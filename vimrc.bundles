@@ -133,4 +133,8 @@ if filereadable(expand("~/.vimrc.bundles.local"))
   source ~/.vimrc.bundles.local
 endif
 
+syntax enable
 filetype on
+filetype indent on
+filetype plugin on
+
