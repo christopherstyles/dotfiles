@@ -123,6 +123,12 @@ Plugin 'koron/nyancat-vim'
 " https://github.com/mtscout6/vim-cjsx
 Plugin 'mtscout6/vim-cjsx'
 
+" indentLine
+" https://github.com/Yggdroot/indentLine
+" indentLine: A vim plugin to display the indention levels with thin vertical
+" lines.
+Plugin 'Yggdroot/indentLine'
+
 if filereadable(expand("~/.vimrc.bundles.local"))
   source ~/.vimrc.bundles.local
 endif
