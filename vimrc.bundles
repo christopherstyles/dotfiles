@@ -89,10 +89,10 @@ Plugin 'kien/ctrlp.vim'
 Plugin 'JulesWang/css.vim' " necessary for Vim version < 7.4
 Plugin 'cakebaker/scss-syntax.vim'
 
-" bling/vim-airline
-" https://github.com/bling/vim-airline
+" vim-airline/vim-airline
+" https://github.com/vim-airline/vim-airline
 " lean & mean status/tabline for vim that's light as air
-Plugin 'bling/vim-airline'
+Plugin 'vim-airline/vim-airline'
 
 " tpope/vim-fugitive
 " https://github.com/tpope/vim-fugitive
