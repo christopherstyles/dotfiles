@@ -289,7 +289,7 @@ fun! s:X(group, fg, bg, attr, lcfg, lcbg)
 endfun
 " }}}
 
-call s:X("Normal","e8e8d3","151515","","White","")
+call s:X("Normal","e8e8d3","000000","","White","")
 set background=dark
 
 if !exists("g:jellybeans_use_lowcolor_black") || g:jellybeans_use_lowcolor_black
@@ -315,7 +315,7 @@ endif
 call s:X("Visual","","404040","","",s:termBlack)
 call s:X("Cursor","","b0d0f0","","","")
 
-call s:X("LineNr","605958","151515","none",s:termBlack,"")
+call s:X("LineNr","605958","000000","none",s:termBlack,"")
 call s:X("Comment","888888","","italic","Grey","")
 call s:X("Todo","808080","","bold","White",s:termBlack)
 
@@ -347,7 +347,7 @@ call s:X("PreProc","8fbfdc","","","LightBlue","")
 hi! link Operator Normal
 
 call s:X("Type","ffb964","","","Yellow","")
-call s:X("NonText","606060","151515","",s:termBlack,"")
+call s:X("NonText","606060","000000","",s:termBlack,"")
 
 call s:X("SpecialKey","444444","1c1c1c","",s:termBlack,"")
 
@@ -464,17 +464,17 @@ call s:X("PreciseJumpTarget","B9ED67","405026","","White","Green")
 
 " Manual overrides for 256-color terminals. Dark colors auto-map badly.
 if !s:low_color
-  hi StatusLineNC ctermbg=235
-  hi Folded ctermbg=236
-  hi FoldColumn ctermbg=234
-  hi SignColumn ctermbg=236
-  hi CursorColumn ctermbg=234
-  hi CursorLine ctermbg=234
-  hi SpecialKey ctermbg=234
-  hi NonText ctermbg=233
-  hi LineNr ctermbg=233
-  hi DiffText ctermfg=81
-  hi Normal ctermbg=233
+  hi StatusLineNC ctermbg=232
+  hi Folded ctermbg=235
+  hi FoldColumn ctermbg=233
+  hi SignColumn ctermbg=235
+  hi CursorColumn ctermbg=233
+  hi CursorLine ctermbg=233
+  hi SpecialKey ctermbg=233
+  hi NonText ctermbg=0
+  hi LineNr ctermbg=232
+  hi DiffText ctermfg=33
+  hi Normal ctermbg=0
   hi DbgBreakPt ctermbg=53
 endif
 
