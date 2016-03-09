@@ -8,75 +8,67 @@ filetype off
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#rc()
 
-
 Plugin 'gmarik/Vundle.vim'
 
-" Define bundles via Github repos
-" Plugin 'christoomey/vim-run-interactive'
-" Plugin 'croaky/vim-colors-github'
-" Plugin 'danro/rename.vim'
+" vkchmck/im-coffee-script
+" CoffeeScript support for vim
+" https://github.com/kchmck/vim-coffee-script
 Plugin 'kchmck/vim-coffee-script'
-" Plugin 'pbrisbin/vim-mkdir'
-Plugin 'slim-template/vim-slim'
-Plugin 'thoughtbot/vim-rspec'
-Plugin 'tpope/vim-dispatch'
+
+" tpope/vim-rails'
+" rails.vim: Ruby on Rails power tools
+" https://github.com/tpope/vim-rails
 Plugin 'tpope/vim-rails'
-" Plugin 'tpope/vim-surround'
+
+" vim-ruby/vim-ruby
+" Vim/Ruby Configuration Files
+" https://github.com/vim-ruby/vim-ruby
 Plugin 'vim-ruby/vim-ruby'
+
 " Plugin 'vim-scripts/ctags.vim'
-" Plugin 'vim-scripts/matchit.zip'
-" Plugin 'vim-scripts/tComment'
 " Plugin 'sickill/vim-sunburst'
-Plugin 'altercation/vim-colors-solarized'
-Plugin 'sickill/vim-monokai'
-" Plugin 'rstacruz/sparkup' " Emmett-like html expansion
-" Plugin 'jgdavey/tslime.vim'
-Plugin 'ngmy/vim-rubocop'
+
+" elzr/vim-json
+" A better JSON for Vim
+" https://github.com/elzr/vim-json
 Plugin 'elzr/vim-json'
 
-" rstacruz/sparkup
-" https://github.com/rstacruz/sparkup
-" A parser for a condensed HTML format
-Plugin 'rstacruz/sparkup'
-
-" mattn/emmet-vim
-" http://github.com/mattn/emmet-vim
-" emmet-vim is a vim plug-in which provides support for expanding abbreviations
-" similar to emmett.
-" Plugin 'mattn/emmet-vim'
-
-" junegunn/goyo.vim
-" https://github.com/junegunn/goyo.vim
-" Distraction-free writing in Vim.
-Plugin 'junegunn/goyo.vim'
-
-" junegunn/limelight.vim
-" https://github.com/junegunn/limelight.vim
-" All the world's indeed a stage and we are merely player
-" Hyperfocus-writing in Vim
-Plugin 'junegunn/limelight.vim'
+" tpope/vim-dispatch
+" dispatch.vim: asynchronous build and test dispatcher
+" https://github.com/tpope/vim-dispatch
+Plugin 'tpope/vim-dispatch'
 
 " airblade/vim-gitgutter
 " https://github.com/airblade/vim-gitgutter
 " A Vim plugin which shows a git diff in the 'gutter' (sign column). It shows
 " whether each line has been added, modified, and where lines have been removed.
 " You can also stage and revert individual hunks.
-Plugin 'airblade/vim-gitgutter' " shows a git diff in the 'gutter' (sign column)
+" Plugin 'airblade/vim-gitgutter' " shows a git diff in the 'gutter' (sign column)
 
 " kshenoy/vim-signature
 " https://github.com/kshenoy/vim-signature
 " Plugin to toggle, display and navigate marks
-Plugin 'kshenoy/vim-signature'
+" Plugin 'kshenoy/vim-signature'
 
 " kien/ctrlp.vim
 " https://github.com/kien/ctrlp.vim
 " Fuzzy file, buffer, mru, tag, etc finder.
 Plugin 'kien/ctrlp.vim'
 
+" altercation/vim-colors-solarized
+" precision colorscheme for the vim text editor
+" https://github.com/altercation/vim-colors-solarized
+Plugin 'altercation/vim-colors-solarized'
+
+" ngmy/vim-rubocop
+" The Vim RuboCop plugin runs RuboCop and displays the results in Vim
+" https://github.com/ngmy/vim-rubocop
+Plugin 'ngmy/vim-rubocop'
+
 " tpope/vim-surround
 " https://github.com/tpope/vim-surround
 " surround.vim: quoting/parenthesizing made simple
-" Plugin 'tpope/vim-surround'
+Plugin 'tpope/vim-surround'
 
 " valloric/MatchTagAlways
 " https://github.com/valloric/MatchTagAlways
@@ -86,7 +78,7 @@ Plugin 'kien/ctrlp.vim'
 " cakebaker/scss-syntax.vim
 " https://github.com/cakebaker/scss-syntax.vim
 " Vim syntax file for scss (Sassy CSS)
-Plugin 'JulesWang/css.vim' " necessary for Vim version < 7.4
+" Plugin 'JulesWang/css.vim' " necessary for Vim version < 7.4
 Plugin 'cakebaker/scss-syntax.vim'
 
 " vim-airline/vim-airline
@@ -119,9 +111,20 @@ Plugin 'tpope/vim-bundler'
 " nyancat-vim: nyancat.vim - nyancat on vim
 Plugin 'koron/nyancat-vim'
 
-" vim-cjsx
+" mtscout6/vim-cjsx
+" Vim plugins for CJSX files (CoffeeScript with React JSX)
 " https://github.com/mtscout6/vim-cjsx
 Plugin 'mtscout6/vim-cjsx'
+
+" pangloss/vim-javascript
+" https://github.com/pangloss/vim-javascript
+" Vastly improved Javascript indentation and syntax support in Vim.
+Plugin 'pangloss/vim-javascript'
+
+" mxw/vim-jsx
+" https://github.com/mxw/vim-jsx
+" Requires pangloss/vim-javascript
+Plugin 'mxw/vim-jsx'
 
 " vim-multiple-cursors
 " https://github.com/terryma/vim-multiple-cursors
@@ -133,6 +136,58 @@ Plugin 'mtscout6/vim-cjsx'
 " indentLine: A vim plugin to display the indention levels with thin vertical
 " lines.
 Plugin 'Yggdroot/indentLine'
+
+" Plugin 'godlygeek/csapprox'
+
+" snipMate.vim aims to be a concise vim script that implements some of
+" TextMate's snippets features in Vim.
+" https://github.com/garbas/vim-snipmate
+" Plugin 'MarcWeber/vim-addon-mw-utils'
+" Plugin 'tomtom/tlib_vim'
+" Plugin 'garbas/vim-snipmate'
+
+" vim-diminactive
+" https://github.com/blueyed/vim-diminactive
+Plugin 'blueyed/vim-diminactive'
+
+" vim-commentary
+" https://github.com/tpope/vim-commentary
+Plugin 'tpope/vim-commentary'
+
+" wincent/terminus
+" Enhanced terminal integration for Vim
+" https://github.com/wincent/terminus
+Plugin 'wincent/terminus'
+
+" ferret
+" https://github.com/wincent/ferret
+" Enhanced multi-file search for Vim
+
+" emmet-vim
+" Emmet for vim: http://emmet.io/ http://mattn.github.io/emmet-vim
+Plugin 'mattn/emmet-vim'
+
+" tpope/vim-unimpaired
+" https://github.com/tpope/vim-unimpaired
+" unimpaired.vim: pairs of handy bracket mappings
+Plugin 'tpope/vim-unimpaired'
+
+" wellle/targets.vim
+" Vim plugin that provides additional text objects.
+" https://github.com/wellle/targets.vim
+Plugin 'wellle/targets.vim'
+
+" slim-template/vim-slim
+" Syntax highlighting for VIM
+" https://github.com/slim-template/vim-slim
+Plugin 'slim-template/vim-slim'
+
+" Thoughtbot
+
+" thoughtbot/vim-rspec'
+" Run Rspec specs from Vim
+" https://github.com/thoughtbot/vim-rspec
+" Plugin 'thoughtbot/vim-rspec'
 
 if filereadable(expand("~/.vimrc.bundles.local"))
   source ~/.vimrc.bundles.local
