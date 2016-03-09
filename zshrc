@@ -56,6 +56,16 @@ bindkey "^Y" accept-and-hold
 bindkey "^N" insert-last-word
 bindkey -s "^T" "^[Isudo ^[A" # "t" for "toughguy"
 
+bindkey "^U" backward-kill-line
+bindkey "^X\\x7f" backward-kill-line
+bindkey "^X^_" redo
+
+autoload -U select-word-style
+select-word-style bash
+
+# bindkey "^[[1;3C" forward-word
+# bindkey "^[[1;3D" backward-word
+
 # [direnv](http://direnv.net/)
 eval "$(direnv hook zsh)"
 
