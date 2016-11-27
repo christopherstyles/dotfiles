@@ -214,6 +214,11 @@ Plugin 'mhinz/vim-startify'
 " https://github.com/flowtype/vim-flow
 Plugin 'flowtype/vim-flow'
 
+" tpope/vim-repeat
+" repeat.vim: enable repeating supported plugin maps with "."
+" https://github.com/tpope/vim-repeat
+Plugin 'tpope/vim-repeat'
+
 if filereadable(expand("~/.vimrc.bundles.local"))
   source ~/.vimrc.bundles.local
 endif
