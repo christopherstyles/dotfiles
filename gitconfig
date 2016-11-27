@@ -26,7 +26,7 @@
   helper = osxkeychain
 [core]
   quotepath = false
-  editor = subl -w
+  editor = subl -n -w
   excludesfile = ~/.gitignore
   autocrlf = input
 [push]
@@ -48,16 +48,16 @@
   email = christopherstyles@gmail.com
   signingkey = B806912E
 [filter "media"]
-	required = true
-	clean = git media clean %f
-	smudge = git media smudge %f
+  required = true
+  clean = git media clean %f
+  smudge = git media smudge %f
 [filter "hawser"]
-	clean = git hawser clean %f
-	smudge = git hawser smudge %f
-	required = true
+  clean = git hawser clean %f
+  smudge = git hawser smudge %f
+  required = true
 [filter "lfs"]
-	clean = git lfs clean %f
-	smudge = git lfs smudge %f
-	required = true
+  clean = git lfs clean %f
+  smudge = git lfs smudge %f
+  required = true
 [rebase]
-	autosquash = true
+  autosquash = true
