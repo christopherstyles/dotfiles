@@ -43,6 +43,8 @@ end
 
 filetype plugin indent on
 
+set omnifunc=syntaxcomplete#Complete
+
 augroup vimrcEx
   autocmd!
 
