@@ -189,6 +189,11 @@ Plugin 'slim-template/vim-slim'
 " https://github.com/thoughtbot/vim-rspec
 " Plugin 'thoughtbot/vim-rspec'
 
+" tpope/vim-eunuch
+" eunuch.vim: helpers for UNIX
+" https://github.com/tpope/vim-eunuch
+Plugin 'tpope/vim-eunuch'
+
 if filereadable(expand("~/.vimrc.bundles.local"))
   source ~/.vimrc.bundles.local
 endif
