@@ -199,6 +199,11 @@ Plugin 'slim-template/vim-slim'
 " https://github.com/tpope/vim-eunuch
 Plugin 'tpope/vim-eunuch'
 
+" elixir-lang/vim-elixir
+" Vim configuration files for Elixir http://elixir-lang.org/
+" https://github.com/elixir-lang/vim-elixir
+Plugin 'elixir-lang/vim-elixir'
+
 if filereadable(expand("~/.vimrc.bundles.local"))
   source ~/.vimrc.bundles.local
 endif
