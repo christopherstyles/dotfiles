@@ -209,6 +209,11 @@ Plugin 'elixir-lang/vim-elixir'
 " https://github.com/mhinz/vim-startify
 Plugin 'mhinz/vim-startify'
 
+" flowtype/vim-flow
+" A vim plugin for Flow.
+" https://github.com/flowtype/vim-flow
+Plugin 'flowtype/vim-flow'
+
 if filereadable(expand("~/.vimrc.bundles.local"))
   source ~/.vimrc.bundles.local
 endif
