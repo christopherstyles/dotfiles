@@ -204,6 +204,11 @@ Plugin 'tpope/vim-eunuch'
 " https://github.com/elixir-lang/vim-elixir
 Plugin 'elixir-lang/vim-elixir'
 
+" mhinz/vim-startify
+" The fancy start screen for Vim.
+" https://github.com/mhinz/vim-startify
+Plugin 'mhinz/vim-startify'
+
 if filereadable(expand("~/.vimrc.bundles.local"))
   source ~/.vimrc.bundles.local
 endif
