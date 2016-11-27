@@ -189,6 +189,11 @@ Plugin 'slim-template/vim-slim'
 " https://github.com/thoughtbot/vim-rspec
 " Plugin 'thoughtbot/vim-rspec'
 
+" gilsondev/searchtasks.vim
+" Plugin to search the labels often used as TODO, FIXME and XXX.
+" https://github.com/gilsondev/searchtasks.vim
+" Plugin 'gilsondev/searchtasks.vim'
+
 " tpope/vim-eunuch
 " eunuch.vim: helpers for UNIX
 " https://github.com/tpope/vim-eunuch
