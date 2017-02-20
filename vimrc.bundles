@@ -219,6 +219,11 @@ Plugin 'flowtype/vim-flow'
 " https://github.com/tpope/vim-repeat
 Plugin 'tpope/vim-repeat'
 
+" lfilho/cosco.vim
+" VIM colon and semicolon insertion bliss
+" https://github.com/lfilho/cosco.vim
+" Plugin 'lfilho/cosco.vim'
+
 if filereadable(expand("~/.vimrc.bundles.local"))
   source ~/.vimrc.bundles.local
 endif
