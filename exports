@@ -37,10 +37,3 @@ export PATH="$HOME/.bin:$PATH"
 
 # Include custom exports
 [[ -f ~/.exports.local ]] && source ~/.exports.local
-
-# GO
-export PATH=$PATH:/usr/local/opt/go/libexec/bin
-export GOPATH=~/gocode
-export GOBIN=$GOPATH/bin
-
-export PATH=$PATH:$GOBIN
