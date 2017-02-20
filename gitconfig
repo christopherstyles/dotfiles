@@ -29,6 +29,7 @@
   editor = subl -n -w
   excludesfile = ~/.gitignore
   autocrlf = input
+  ignorecase = false
 [push]
   default = upstream
 [include]
