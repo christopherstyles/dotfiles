@@ -175,6 +175,7 @@ highlight ColorColumn ctermbg=233 guibg=#2c2d27
 
 " Numbers
 set number
+set relativenumber
 set numberwidth=3
 " Tab completion
 " will insert tab at beginning of line,
