@@ -277,6 +277,8 @@ set mouse=a
 " map <ScrollWheelDown> <C-E>
 
 " Set up the gui cursor to look nice
+highlight Cursor guifg=white guibg=#ad00ac
+highlight Visual guifg=white guibg=#ad00ac
 set guicursor=n-v-c:block-Cursor-blinkon0
 set guicursor+=ve:ver35-Cursor
 set guicursor+=o:hor50-Cursor
