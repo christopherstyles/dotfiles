@@ -263,11 +263,11 @@ autocmd Filetype gitcommit setlocal spell textwidth=72
 " set hlsearch
 
 " Open NERDTree with Ctrl+n
-" map <C-n> :NERDTreeToggle<CR>
-" let g:NERDTreeDirArrows = 1
-" let g:NERDTreeDirArrowExpandable = '▸'
-" let g:NERDTreeDirArrowCollapsible = '▾'
-" let g:NERDTreeMouseMode=3
+map <C-n> :NERDTreeToggle<CR>
+let g:NERDTreeDirArrows = 1
+let g:NERDTreeDirArrowExpandable = '▸'
+let g:NERDTreeDirArrowCollapsible = '▾'
+let g:NERDTreeMouseMode=3
 
 " https://github.com/thoughtbot/vim-rspec#iterm-instead-of-terminal
 let g:rspec_runner = "os_x_iterm"

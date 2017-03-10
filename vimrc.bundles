@@ -94,7 +94,7 @@ Plugin 'tpope/vim-fugitive'
 " scrooloose/nerdtree
 " https://github.com/scrooloose/nerdtree
 " A tree explorer plugin for vim.
-" Plugin 'scrooloose/nerdtree'
+Plugin 'scrooloose/nerdtree'
 
 " scrooloose/syntastic
 " https://github.com/scrooloose/syntastic
