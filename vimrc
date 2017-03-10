@@ -291,7 +291,8 @@ let g:airline_powerline_fonts=0
 
 " GitGutter colors
 " highlight SignColumn ctermbg=235 ctermfg=235
-hi SignColumn ctermbg=232
+highlight clear SignColumn
+" hi SignColumn ctermbg=232 guibg=darkgrey
 
 " This allows buffers to be hidden if you've modified a buffer.
 " This is almost a must if you wish to use buffers in this way.
@@ -337,6 +338,7 @@ nnoremap <leader><space> :noh<cr>
 
 " Select all
 map <C-a> <esc>ggVG<CR>
+
 "
 " Close the current buffer and move to the previous one
 " This replicates the idea of closing a tab
