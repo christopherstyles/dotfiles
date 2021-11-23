@@ -1,2 +1,4 @@
 !bin
 vim/bundle/
+.vscode/settings.json
+.DS_Store
