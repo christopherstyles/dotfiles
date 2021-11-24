@@ -19,35 +19,46 @@
   ignored = !git ls-files -v | grep ^[a-z]
   simplelog = !git log --oneline --decorate
   lg = !git log --all --graph --pretty=format:'%Cred%h%Creset -%C(auto)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+  praise = blame
+  stats = shortlog -sn --since='10 weeks' --until='2 weeks'
+  recent = for-each-ref --count=10 --sort=-committerdate refs/heads/ --format="%(refname:short)"
+  today = log --since=00:00:00 --all --no-merges --oneline --author=christopherstyles@gmail.com --author=christopherstyles@users.noreply.github.com
+  graph = log --graph --all --decorate --stat --date=iso
 [merge]
   tool = opendiff
   summary = true
 [credential]
   helper = osxkeychain
+  useHttpPath = true
 [core]
   quotepath = false
-  editor = subl -n -w
+  editor = code -w
   excludesfile = ~/.gitignore
   autocrlf = input
   ignorecase = false
 [push]
   default = upstream
+[pull]
+	rebase = false
 [include]
   path = ~/.gitconfig.local
 [commit]
   template = ~/.gitmessage
+	gpgsign = true
 [fetch]
   prune = true
 [mergetool]
   keepBackup = false
 [github]
   user = christopherstyles
+[gpg]
+  program = /usr/local/bin/gpg
 [rerere]
   enabled = 0
 [user]
-  name = Christopher Styles
-  email = christopherstyles@gmail.com
-  signingkey = B806912E
+  name = Chris Styles
+	email = christopherstyles@users.noreply.github.com
+  signingkey = 13086AA0E6996E33
 [filter "media"]
   required = true
   clean = git media clean %f
@@ -57,8 +68,13 @@
   smudge = git hawser smudge %f
   required = true
 [filter "lfs"]
-  clean = git lfs clean %f
-  smudge = git lfs smudge %f
+  clean = git-lfs clean -- %f
+  smudge = git-lfs smudge -- %f
+  process = git-lfs filter-process
   required = true
 [rebase]
   autosquash = true
+[hub]
+  protocol = https
+[init]
+	defaultBranch = main
