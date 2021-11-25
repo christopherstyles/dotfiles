@@ -44,6 +44,12 @@ Execute the following to terminate the GPG (Gnu Privacy Guard) agent:
 
     killall gpg-agent
 
+### Install [iterm2](https://iterm2.com/)
+
+Import the [`iterm2/profile.json`](./iterm2/profile.json).
+
+In Preferences > Appearance, select the “Minimal” Theme.
+
 ### Install [rcm](https://github.com/thoughtbot/rcm):
 
     brew tap thoughtbot/formulae
